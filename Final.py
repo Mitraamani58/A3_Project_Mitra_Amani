@@ -1,9 +1,12 @@
 import sklearn
+import numpy as np
+import matplotlib.pyplot as plt
 
 from sklearn.datasets import fetch_california_housing
 data=fetch_california_housing()
 x=data.data
 y=data.target
+
 
 from sklearn.model_selection import KFold
 kf=KFold(n_splits=5, shuffle=True, random_state=42 )
@@ -65,6 +68,13 @@ print('accuracy of RF model is: ', (1+gs.best_score_)*100,'%')
 
 #accuracy of RF model is:  81.74651391923146 %
 
+x=np.arange (1,30).reshape(-1,1)
+y=gs.predict(x)
+plt.scatter(x,y)
+plt.xlabel(' House age(s)')
+plt.ylabel('House value ($)')
+plt.show 
+
 
 '''============================SVM=========================================='''
 
@@ -81,4 +91,4 @@ gs.fit(x_scaled,y)
 gs.best_score_
 print('accuracy of SVM model is: ', (1+gs.best_score_)*100,'%')
 
-#accuracy of SVM model is:  76.36213051625185 %
+#accuracy of SVM model is:  76.28500668759332 %

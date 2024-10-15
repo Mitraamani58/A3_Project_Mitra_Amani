@@ -1,8 +1,26 @@
+'''
+APM NOTE:
+salam, lotfan tamame import haro be balaye code montaghel konid baraye paksazi data, bad az run kardan
+dar entehaye code dar ghesmate final report tozih dahid data ha chi bodand, vorodi chi bodand, khoroji chi bodand
+hadaf chi bdoe, chanta model train kardin va kodom model behtarin result ro dashte (natije giri)
+moafagh bashid
+
+
+
+'''
+
+
+
+
+#-------------Import Libs---------------------------
 import sklearn
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 from sklearn.datasets import fetch_california_housing
+#-------------loading data-------------------------
+
 data=fetch_california_housing()
 x=data.data
 y=data.target
@@ -92,3 +110,7 @@ gs.best_score_
 print('accuracy of SVM model is: ', (1+gs.best_score_)*100,'%')
 
 #accuracy of SVM model is:  76.28500668759332 %
+
+
+
+#========FINAL REPORT======================

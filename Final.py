@@ -89,8 +89,6 @@ print('accuracy of RF model is: ', (1+gs.best_score_)*100,'%')
 
 
 '''============================SVM=========================================='''
-scaler=MinMaxScaler()
-x_scaled=scaler.fit_transform(x)
 
 model= SVR()
 my_params={'kernel': ['linear','poly','rbf'], 'C':[0.001,0.01,1]}
@@ -103,6 +101,7 @@ print('accuracy of SVM model is: ', (1+gs.best_score_)*100,'%')
 #accuracy of SVM model is:  76.28500668759332 %
 
 #========FINAL REPORT======================
+
 '''A sample dataset (containing 20,640 sample) from the scikit-learn library is chosen for this project that contains data on California housing prices. 
 8 features of the houses are considered as the input variables, including; MedInc, HouseAge, AveRooms, AveBedrms, Population, AveOccup,Latitude, and Longitude.
 The price of the houses is considered as the output (target).

@@ -1,9 +1,10 @@
 '''
-APM NOTE:
-salam, lotfan tamame import haro be balaye code montaghel konid baraye paksazi data, bad az run kardan
-dar entehaye code dar ghesmate final report tozih dahid data ha chi bodand, vorodi chi bodand, khoroji chi bodand
-hadaf chi bdoe, chanta model train kardin va kodom model behtarin result ro dashte (natije giri)
+APM:
+Salam,
+Besiar awli
+daryaft shod
 moafagh bashid
+
 
 
 
